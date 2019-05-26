@@ -1,0 +1,24 @@
+python --version
+pip install pipenv
+pipenv install django
+//to enter the main virtual environment that pipenv gives us type:
+pipenv shell
+//cat for terminal, and type for cmd
+type Piplock
+//now you can see the dependencies from inside the terminal
+
+django-admin startproject notes_project .
+django-admin startapp notes
+//the above creates an app, now add notes to the installed apps in settings.python
+
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+
+python manage.py createsuperuser --username=ckd16
+//ckd16
+//password123
+
+pipenv install djangorestframework
+pipenv install django-cors-headers
+//update settings.py installedapps and middleware
