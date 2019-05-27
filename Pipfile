@@ -11,6 +11,8 @@ djangorestframework = "*"
 django-cors-headers = "*"
 channels = "*"
 channels-redis = "*"
+redis = "*"
+pypiwin32 = "*"
 
 [requires]
 python_version = "3.7"

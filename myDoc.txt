@@ -19,6 +19,31 @@ python manage.py createsuperuser --username=ckd16
 //ckd16
 //password123
 
+pipenv install channels channels-redis
 pipenv install djangorestframework
 pipenv install django-cors-headers
 //update settings.py installedapps and middleware
+
+docker run -p 6379:6379 -d redis:2.8
+pipenv install channels-redis redis
+
+//REACT STUFF
+
+npm install -g create-react-app
+create-react-app -V 
+
+create-react-app frontend
+cd frontend
+yarn start 
+//use: npm start
+
+npm install --save reactstrap
+npm install bootstrap -S 
+//-S will set it to our package.json file
+
+cd frontend
+yarn install
+
+npm install --save react-websocket
+
+npm start
